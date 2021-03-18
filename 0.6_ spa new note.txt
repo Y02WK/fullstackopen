@@ -1,0 +1,14 @@
+title 0.6: spa new note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+
+note over browser:
+runs code in spa.js
+prevents form submission
+creates a new DOM element for the new note
+rerenders the page with the new note
+sends note data to server as a JSON string
+end note
+
+server-->browser: HTTP Status Code 201 Created success
